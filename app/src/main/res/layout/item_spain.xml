@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgBadge"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="6dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tvTeamName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgBadge"
+        android:text="Display Team Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvStadiumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTeamName"
+        android:layout_toRightOf="@id/imgBadge"
+        android:text="Display Stadium"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/imgBadge"
+        />
+
+</RelativeLayout>
